@@ -1,4 +1,6 @@
-# Proyecto: La Casa del Puerko E-commerce
+=======
+# CasaDelPuerko-Landing
+Welcome to La Casa del Puerko, your gateway to authentic Peruvian chicharrones. This repository contains the code for our landing page, designed to connect you directly with us through WhatsApp for easy and fast orders.
 
 El objetivo de este proyecto en su primera iteración es crear una **landing page** para **La Casa del Puerko**, una reconocida chicharronería dedicada a ofrecer sabores tradicionales de la gastronomía peruana, con un catálogo visual de productos y un sistema de contacto fácil mediante WhatsApp.
 
