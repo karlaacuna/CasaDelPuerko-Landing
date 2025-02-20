@@ -5,7 +5,8 @@ const NavBar = () => {
   return (
     <Navbar bg="light" expand="lg" fixed='top' className='navbar-banner'>
       <Container>
-        <Navbar.Brand href="#home">La Casa del Puerko</Navbar.Brand>
+        <Navbar.Brand href="#home">
+        <img alt="la casa del puerko" className="navbar-image" src='/public/sticker.png'/></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
