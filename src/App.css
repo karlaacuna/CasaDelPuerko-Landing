@@ -1,29 +1,20 @@
-#root {
-  margin: 0 auto;
-  padding: 0 auto;
-  text-align: center;
+.body, #root {
+  font-family: 'Londrina Solid', sans-serif;
+}
+h1 {
+  font-family: 'Londrina Solid', sans-serif;
+  font-weight: 300;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+h2 {
+  font-family: 'Londrina Solid', sans-serif;
+  font-weight: 200;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3, p{
+  font-family: 'Londrina Solid', sans-serif;
+  font-weight: 100;
+  font-size: medium;
+  letter-spacing: 2px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
