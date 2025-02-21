@@ -6,8 +6,14 @@ const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector('.navbar-banner') as HTMLElement;
-      if (navbar) {
+      const image = document.querySelector('.navbar-image') as HTMLElement; 
+      if (navbar && image) {
         navbar.classList.toggle('down', window.scrollY > 0);
+        if (window.scrollY > 0) {
+          image.classList.add('shrink');
+        } else {
+          image.classList.remove('shrink');
+        }
       }
     };
 

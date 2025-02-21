@@ -4,17 +4,21 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.navbar-image {
+  transition: width 0.3s ease, height 0.3s ease; 
+}
+
+.navbar-image.shrink {
+  width: 3.5rem; 
+  height: 3.5rem;
+}
+
 .navbar-banner {
   position: relative;
   background-color: transparent;
   transition: background-color 0.5s ease, box-shadow 0.3s ease;
   padding: 1rem 2rem;
   align-items: center;
-}
-
-.navbar-image {
-  width: 12rem;
-  height: 12rem;
 }
 
 button.navbar-toggler {
@@ -61,18 +65,23 @@ button.navbar-toggler {
 
 
 /* Navbar en pantallas pequeñas (responsive) */
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .navbar {
     padding: 0.8rem 1.5rem;
     background-color: #292522;
   }
 
+  button.navbar-toggler {
+    margin-left: 15%;
+  }
+
   .navbar-image {
     position: absolute;
-    right: 2rem;
-    top: 0.7rem;
-    width: 3rem;
-    height: 3rem;
+    right: 20%;
+    top: 0.8rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    transition: none;
   }
 
   .navbar-nav {
@@ -86,8 +95,11 @@ button.navbar-toggler {
     letter-spacing: 2px;
   }
 }
-
-@media (min-width: 991px) {
+/* Estilos en pantallas medianas y grandes */
+@media (min-width: 992px) {
+  .fixed-top {
+    position: fixed;
+  }
   #navbarright {
     display: flex;
     justify-content: start;
@@ -101,11 +113,17 @@ button.navbar-toggler {
     position: absolute;
     right: 1rem;
   }
+
   .navbar-nav .nav-link {
     font-size: 1.5rem;
   }
-}
 
+  .navbar-image {
+    position: static;
+    width: 5rem;
+    height: 5rem;
+  }
+}
 @media (min-width: 1200px) {
   #navbarright {
     display: flex;
@@ -123,6 +141,11 @@ button.navbar-toggler {
 
   .navbar-nav .nav-link {
     font-size: 2rem;
+  }
+
+  .navbar-image {
+    width: 8rem;
+    height: 8rem;
   }
 }
 
@@ -145,5 +168,9 @@ button.navbar-toggler {
     font-size: 3rem;
     letter-spacing: 5px;
   }
-  
+
+  .navbar-image {
+    width: 12rem;
+    height: 12rem;
+  }
 }
