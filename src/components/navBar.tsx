@@ -1,8 +1,13 @@
 import { Container, Navbar, Nav, Row, Col } from 'react-bootstrap';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import '../styles/navBarStyle.css';
 
 const NavBar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleToggle= () => {
+    setIsOpen(!isOpen);
+  };
+  
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.querySelector('.navbar-banner') as HTMLElement;
@@ -25,11 +30,14 @@ const NavBar = () => {
   }, []);
 
   return (
-    <Navbar expand="lg" fixed="top" className="navbar-banner pt-3 pb-3">
+    <Navbar expand="lg" fixed="top" className="navbar-banner">
       <Container>
         <Row className="w-100">
           <Col className='d-block'></Col>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav"
+            onClick={handleToggle}>
+              <span className={`navbar-toggler-icon ${isOpen ? 'open' : ''}`}></span>
+              </Navbar.Toggle>
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav>
                 <div  id='navbarright'>
@@ -38,7 +46,7 @@ const NavBar = () => {
                 </div>
                 <div id='navbarleft'>
                 <Nav.Link href="#nosotros">Nosotros</Nav.Link>
-                <Nav.Link href="#whatsapp">(+51) 989-974-555</Nav.Link>
+                <Nav.Link href="#whatsapp">(+51) 904-914-460</Nav.Link>
                 </div>
               </Nav>
             </Navbar.Collapse>

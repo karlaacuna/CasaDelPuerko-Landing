@@ -9,8 +9,8 @@
 }
 
 .navbar-image.shrink {
-  width: 3.5rem; 
-  height: 3.5rem;
+  width: 3rem; 
+  height: 3rem;
 }
 
 .navbar-banner {
@@ -23,8 +23,8 @@
 
 button.navbar-toggler {
   background-color: transparent;
-  display: flex;
   align-items: start;
+  max-width: 20%;
 }
 
 .navbar-toggler {
@@ -38,7 +38,9 @@ button.navbar-toggler {
 .navbar-toggler-icon {
   background-image: url("/menu.png") !important;
 }
-
+.navbar-toggler-icon.open {
+  background-image: url("/close.png") !important; 
+}
 .navbar-nav .nav-link {
   font-size: 3rem;
   color: white;
@@ -70,18 +72,21 @@ button.navbar-toggler {
     padding: 0.8rem 1.5rem;
     background-color: #292522;
   }
-
-  button.navbar-toggler {
-    margin-left: 15%;
+  .navbar>.container{
+    justify-content: flex-end!important;
   }
 
   .navbar-image {
     position: absolute;
-    right: 20%;
+    left: 5%;
     top: 0.8rem;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 2.6rem;
+    height: 2.6rem;
     transition: none;
+  }
+  .navbar-image.shrink {
+    width: 2.6rem;
+    height: 2.6rem;
   }
 
   .navbar-nav {
@@ -89,9 +94,9 @@ button.navbar-toggler {
   }
 
   .navbar-nav .nav-link {
-    font-size: 1.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    font-size: 1rem;
+    padding-left: 20%;
+    padding-right: 20%;
     letter-spacing: 2px;
   }
 }
@@ -115,13 +120,18 @@ button.navbar-toggler {
   }
 
   .navbar-nav .nav-link {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .navbar-image {
     position: static;
     width: 5rem;
     height: 5rem;
+    left: 8%;
+  }
+  .navbar-image.shrink {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 @media (min-width: 1200px) {
@@ -140,7 +150,7 @@ button.navbar-toggler {
   }
 
   .navbar-nav .nav-link {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
 
   .navbar-image {
@@ -165,7 +175,7 @@ button.navbar-toggler {
   }
 
   .navbar-nav .nav-link {
-    font-size: 3rem;
+    font-size: 1.8rem;
     letter-spacing: 5px;
   }
 
