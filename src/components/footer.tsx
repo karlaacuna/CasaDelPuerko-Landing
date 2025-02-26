@@ -7,7 +7,7 @@ export default function Footer() {
       <Container>
         <Row className='mt-4'>
         <Col md={4} className="text-center">
-            <img alt="la casa del puerko" className="footer-image" src="/public/LCDP STICKER.png" />
+            <img alt="la casa del puerko" className="footer-image" src="/LCDP STICKER.png" />
             <div className="social-icons">
               <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook de La Casa del Puerko" className="social-icon">
                 <i className="fab fa-facebook-f"></i>

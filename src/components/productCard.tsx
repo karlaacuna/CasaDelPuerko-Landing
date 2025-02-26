@@ -1,21 +1,25 @@
-import { Card, Button } from 'react-bootstrap';
+import { Card} from 'react-bootstrap';
 import { ProductCardProps } from '../interfaces/product';
+import '../styles/productCardStyle.css';
+import CartButton from '../atoms/CartButton';
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => { 
   return (
-    <Card className="my-3" style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={product.image} alt={product.name} />
-      <Card.Body>
+    <Card className="productContainer">
+      <Card.Img src={product.image} alt={product.name} className='cardImageProduct'/>
+      <Card.Body className='cardBodyProduct'>
         <Card.Title>{product.name}</Card.Title>
-        <Card.Text>
+        <Card.Text className="cardTextProduct">
           {product.description}
         </Card.Text>
-        <Card.Text>
-          <strong>{`$${product.price}`}</strong>
+        <div className='divcontprod'>
+        <Card.Text className='productPrice'>
+          {`S/.${product.price}`}
         </Card.Text>
-        <Button variant="primary" href={`https://wa.me/${product.whatsapp}`}>
-          Comprar en WhatsApp
-        </Button>
+        <div className='buttonBuyProduct'>
+        <CartButton productWhatsapp={product.whatsapp}></CartButton>
+        </div>
+        </div>
       </Card.Body>
     </Card>
   );

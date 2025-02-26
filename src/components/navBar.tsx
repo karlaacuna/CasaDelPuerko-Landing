@@ -52,7 +52,7 @@ const NavBar = () => {
             </Navbar.Collapse>
           <Col className="d-flex justify-content-center" xs={12}>
             <Navbar.Brand href="#home">
-              <img alt="la casa del puerko" className="navbar-image" src="/public/sticker.png" />
+              <img alt="la casa del puerko" className="navbar-image" src="/sticker.png" />
             </Navbar.Brand>
           </Col>
         </Row>

@@ -4,7 +4,7 @@ const productsChicharron = [
       name: 'Chicharrón Crujiente',
       description: 'Chicharrón de cerdo crujiente, preparado al estilo tradicional peruano.',
       price: '15.00',
-      image: 'https://placehold.co/300x200?text=Producto+1',
+      image: '/_MG_0483.JPG',
       whatsapp: '989974555',
     },
     {
@@ -12,7 +12,7 @@ const productsChicharron = [
       name: 'Chicharrón con Camote',
       description: 'Delicioso chicharrón acompañado con camote frito, una combinación perfecta.',
       price: '18.00',
-      image: 'https://placehold.co/300x200?text=Producto+2',
+      image: '/_MG_0543.JPG',
       whatsapp: '989974555',
     },
     {
@@ -20,7 +20,7 @@ const productsChicharron = [
       name: 'Chicharrón de Pavo',
       description: 'Elaborado con pavo, crujiente y jugoso, ideal para compartir en familia.',
       price: '20.00',
-      image: 'https://placehold.co/300x200?text=Producto+3',
+      image: '/_MG_0544.JPG',
       whatsapp: '989974555',
     },
     {
@@ -28,7 +28,7 @@ const productsChicharron = [
       name: 'Tamalito de Cerdo',
       description: 'Tamalito relleno de cerdo, con un sabor tradicional y especias de la región.',
       price: '12.00',
-      image: 'https://placehold.co/300x200?text=Producto+4',
+      image: '/_MG_3101.JPG',
       whatsapp: '989974555',
     },
     {
@@ -36,7 +36,7 @@ const productsChicharron = [
       name: 'Chicharrón con Ensalada',
       description: 'Chicharrón servido con una ensalada fresca de la huerta.',
       price: '16.00',
-      image: 'https://placehold.co/300x200?text=Producto+5',
+      image: '/_MG_3112.JPG',
       whatsapp: '989974555',
     },
     {
@@ -49,7 +49,7 @@ const productsChicharron = [
     },
     {
       id: 7,
-      name: 'Chicharrón con Papas Fritas',
+      name: 'Chicharrón con Papas',
       description: 'Chicharrón acompañado con papas fritas caseras.',
       price: '17.00',
       image: 'https://placehold.co/300x200?text=Producto+7',
