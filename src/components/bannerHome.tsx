@@ -1,12 +1,13 @@
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
+import '../styles/bannerHomeStyle.css';
 
 export default function BannerHome() {
   return (
     <Carousel>
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="bannerHomeImage"
           src="https://placehold.co/800x400?text=Imagen+1"
           alt="First slide"
         />
@@ -18,7 +19,7 @@ export default function BannerHome() {
 
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="bannerHomeImage"
           src="https://placehold.co/800x400?text=Imagen+2"
           alt="Second slide"
         />
@@ -30,7 +31,7 @@ export default function BannerHome() {
 
       <Carousel.Item>
         <img
-          className="d-block w-100"
+          className="bannerHomeImage"
           src="https://placehold.co/800x400?text=Imagen+3"
           alt="Third slide"
         />

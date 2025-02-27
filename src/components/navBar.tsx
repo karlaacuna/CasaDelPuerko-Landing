@@ -46,7 +46,7 @@ const NavBar = () => {
                 </div>
                 <div id='navbarleft'>
                 <Nav.Link href="#nosotros">Nosotros</Nav.Link>
-                <Nav.Link href="#whatsapp">(+51) 904-914-460</Nav.Link>
+                <Nav.Link href="#whatsapp">Pide a Domicilio</Nav.Link>
                 </div>
               </Nav>
             </Navbar.Collapse>

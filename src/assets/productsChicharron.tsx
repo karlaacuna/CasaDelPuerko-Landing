@@ -44,7 +44,7 @@ const productsChicharron = [
       name: 'Sopa de Chicharrón',
       description: 'Una sopa caliente con chicharrón, ideal para el frío.',
       price: '14.00',
-      image: 'https://placehold.co/300x200?text=Producto+6',
+      image: '/_MG_0483.JPG',
       whatsapp: '989974555',
     },
     {
@@ -52,7 +52,7 @@ const productsChicharron = [
       name: 'Chicharrón con Papas',
       description: 'Chicharrón acompañado con papas fritas caseras.',
       price: '17.00',
-      image: 'https://placehold.co/300x200?text=Producto+7',
+      image: '/_MG_3112.JPG',
       whatsapp: '989974555',
     },
     {
@@ -60,7 +60,7 @@ const productsChicharron = [
       name: 'Arepa de Chicharrón',
       description: 'Deliciosa arepa rellena con chicharrón y un toque de salsa picante.',
       price: '13.00',
-      image: 'https://placehold.co/300x200?text=Producto+8',
+      image: '/_MG_3101.JPG',
       whatsapp: '989974555',
     },
 ];

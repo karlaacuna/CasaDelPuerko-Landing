@@ -26,8 +26,8 @@ export default function Footer() {
           </Col>
           <Col md={4}>
           <h5>Contacto</h5>
-            <p> (+51) 904-914-460</p>
-            <p> contacto@lacasadelpuerco.com</p>
+            <p> (+51) 904-914-460 </p>
+            <p>contacto@lacasadelpuerco.com</p>
           </Col>
         </Row>
 
